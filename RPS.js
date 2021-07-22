@@ -19,43 +19,43 @@ function Winner(event){
         case "Rock":
                 if(c == "Rock"){
                     drawcount++
-            result = "Draw" + " (" + drawcount + " times)";
+            result = "Draw" //+ " (" + drawcount + " times)";
                 }
                 else if (c == "Scissors"){
                     wincount++
-            result = "You Win" + " (" + wincount + " times)";
+            result = "You Win" //+ " (" + wincount + " times)";
                 }
                 else {
                     losecount++;
-                    result = "You lose" + " (" + losecount + " times)";
+                    result = "You lose" // + " (" + losecount + " times)";
                 }
             break;
         case "Scissors":
                 if(c == "Scissors"){
              drawcount++
-            result = "Draw" + " (" + drawcount + " times)";
+            result = "Draw" //+ " (" + drawcount + " times)";
                 }
                 else if (c == "Paper"){
              wincount++
-            result = "You Win" + " (" + wincount + " times)";
+            result = "You Win" //+ " (" + wincount + " times)";
                 }
                 else {
                     losecount++;
-                    result = "You lose" + " (" + losecount + " times)";
+                    result = "You lose" //+ " (" + losecount + " times)";
                 }
             break;
         case "Paper":
                 if(c == "Paper"){
              drawcount++
-            result = "Draw" + " (" + drawcount + " times)";
+            result = "Draw" //+ " (" + drawcount + " times)";
                 }
                 else if (c == "Rock"){
              wincount++
-            result = "You Win" + " (" + wincount + " times)";
+            result = "You Win" //+ " (" + wincount + " times)";
                 }
                 else {
                     losecount++;
-                    result = "You lose" + " (" + losecount + " times)";
+                    result = "You lose" //+ " (" + losecount + " times)";
                 }
             break;
         default:
