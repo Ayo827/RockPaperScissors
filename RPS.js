@@ -11,34 +11,52 @@ function Winner(event){
      //let c2 = document.querySelector('button#'+c);
      document.querySelector("#ComputerChoice").innerText = c;
      let result = '';
+    let wincount = 0;
+    let drawcount = 0;
+    let losecount = 0;
     switch(p)
     {
         case "Rock":
                 if(c == "Rock"){
-            result = "Draw";
+                    drawcount++
+            result = "Draw" + " (" + drawcount + " times)";
                 }
                 else if (c == "Scissors"){
-             result = "You win";
+                    wincount++
+            result = "You Win" + " (" + wincount + " times)";
                 }
-                else {result = "You lose";}
+                else {
+                    losecount++;
+                    result = "You lose" + " (" + losecount + " times)";
+                }
             break;
         case "Scissors":
                 if(c == "Scissors"){
-            result = "Draw";
+             drawcount++
+            result = "Draw" + " (" + drawcount + " times)";
                 }
                 else if (c == "Paper"){
-             result = "You win";
+             wincount++
+            result = "You Win" + " (" + wincount + " times)";
                 }
-                else {result = "You lose";}
+                else {
+                    losecount++;
+                    result = "You lose" + " (" + losecount + " times)";
+                }
             break;
         case "Paper":
                 if(c == "Paper"){
-            result = "Draw";
+             drawcount++
+            result = "Draw" + " (" + drawcount + " times)";
                 }
                 else if (c == "Rock"){
-             result = "You win";
+             wincount++
+            result = "You Win" + " (" + wincount + " times)";
                 }
-                else {result = "You lose";}
+                else {
+                    losecount++;
+                    result = "You lose" + " (" + losecount + " times)";
+                }
             break;
         default:
             ;
